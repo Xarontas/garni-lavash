@@ -9,7 +9,7 @@ export default function Section1() {
                 <Row className="sectionDiv colour-block">
                     <Col lg={6}>
                         <div className="sectionPhoto1">
-                            <img src="/public/s1.jpg" alt="photo" width={'100%'} height={'auto'} />
+                            <img src="./s1.jpg" alt="photo" width={'100%'} height={'auto'} />
                         </div>
                     </Col>
                     <Col lg={6}>
@@ -33,7 +33,7 @@ export default function Section1() {
                     </Col>
                     <Col lg={6}>
                         <div className="sectionPhoto1">
-                            <img src="/public/s2.jpg" alt="photo" width={'100%'} height={'auto'} />
+                            <img src="./s2.jpg" alt="photo" width={'100%'} height={'auto'} />
                         </div>
                     </Col>
                 </Row>
@@ -41,7 +41,7 @@ export default function Section1() {
                 <Row className="sectionDiv colour-block">
                     <Col lg={6}>
                         <div className="sectionPhoto1">
-                            <img src="/public/s3.jpg" alt="photo" width={'100%'} height={'auto'} />
+                            <img src="./s3.jpg" alt="photo" width={'100%'} height={'auto'} />
                         </div>
                     </Col>
                     <Col lg={6}>
