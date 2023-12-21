@@ -20,9 +20,9 @@ export default function Footer() {
                         <div className="rightDiv">
                             <div className='social'>
                                 <Nav>
-                                    <Nav.Link href="www.facebook.com" target='_blank'><img src="/public/icon-facebook.svg" alt='facebook' /> </Nav.Link>
-                                    <Nav.Link href="www.pinterest.com" target='_blank'><img src="/public/icon-pinterest.svg" alt='pinterest' /> </Nav.Link>
-                                    <Nav.Link href="www.instagram.com" target='_blank'><img src="/public/icon-instagram.svg" alt='instagram' /> </Nav.Link>
+                                    <Nav.Link href="www.facebook.com" target='_blank'><img src="./icon-facebook.svg" alt='facebook' /> </Nav.Link>
+                                    <Nav.Link href="www.pinterest.com" target='_blank'><img src="./icon-pinterest.svg" alt='pinterest' /> </Nav.Link>
+                                    <Nav.Link href="www.instagram.com" target='_blank'><img src="./icon-instagram.svg" alt='instagram' /> </Nav.Link>
 
                                 </Nav>
                             </div>
