@@ -13,7 +13,7 @@ function ProductModal1(props: any) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="modalPhoto" style={{ backgroundImage: 'url(../public/contact-image.jpg)' }}></div>
+                <div className="modalPhoto" style={{ backgroundImage: 'url(./contact-image.jpg)' }}></div>
                 <div className="modalInfo">
                     <h5>Lavash 1</h5>
                     <div className="weight">
@@ -54,7 +54,7 @@ function ProductModal2(props: any) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="modalPhoto" style={{ backgroundImage: 'url(../public/prod3.jpg)' }}></div>
+                <div className="modalPhoto" style={{ backgroundImage: 'url(./prod3.jpg)' }}></div>
                 <div className="modalInfo">
                     <h5>Ποντιακή Πίτα</h5>
                     <div className="weight">
@@ -95,7 +95,7 @@ function ProductModal3(props: any) {
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
-                <div className="modalPhoto" style={{ backgroundImage: 'url(../public/contact-image.jpg)' }}></div>
+                <div className="modalPhoto" style={{ backgroundImage: 'url(./contact-image.jpg)' }}></div>
                 <div className="modalInfo">
                     <h5>ΛΑΒΑΣ 3</h5>
                     <div className="weight">
@@ -140,7 +140,7 @@ export default function Products() {
                     <Col md={4}>
                         <div className="prodDiv" onClick={() => ProductModal1(setModalShow1(true))}>
                             <div className="prodPhotoDiv">
-                                <img src="../public/contact-image.jpg" alt="product photo" className="productPhoto" />
+                                <img src="./contact-image.jpg" alt="product photo" className="productPhoto" />
                             </div>
                             <div className="prodText">
                                 <div className="prodTitle">Lavash</div>
@@ -155,7 +155,7 @@ export default function Products() {
                         <div className="prodDiv" onClick={() => ProductModal2(setModalShow2(true))}>
                             {/* <div className="prodDiv" onClick={() => setModalShow(true)}> */}
                             <div className="prodPhotoDiv">
-                                <img src="../public/prod3.jpg" alt="product photo" className="productPhoto" />
+                                <img src="./prod3.jpg" alt="product photo" className="productPhoto" />
                             </div>
                             <div className="prodText">
                                 <div className="prodTitle">Ποντιακή Πίτα</div>
@@ -170,7 +170,7 @@ export default function Products() {
                     <Col md={4}>
                         <div className="prodDiv" onClick={() => ProductModal3(setModalShow3(true))}>
                             <div className="prodPhotoDiv">
-                                <img src="../public/contact-image.jpg" alt="product photo" className="productPhoto" />
+                                <img src="./contact-image.jpg" alt="product photo" className="productPhoto" />
                             </div>
                             <div className="prodText">
                                 <div className="prodTitle">ΛΑΒΑΣ 3</div>
