@@ -14,7 +14,7 @@ export default function TopNavbar() {
         <>
             <Navbar collapseOnSelect expand="lg" className="navbar-dark shadow-5-strong pad">
                 <Container>
-                    <Navbar.Brand href="#home"><img src='/public/garni-logo.png' alt="logo" width={'100%'} height={'60px'} /></Navbar.Brand>
+                    <Navbar.Brand href="#home"><img src='./garni-logo.png' alt="logo" width={'100%'} height={'60px'} /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"></Nav>
