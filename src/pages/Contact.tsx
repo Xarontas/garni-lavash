@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <>
 
-            <div className="heroDiv">
+            <div className="heroDiv" style={{ backgroundImage: "url(./desk1.jpg)" }}>
                 <TopNavbar />
             </div>
             <Container className="con-pad">
@@ -15,7 +15,7 @@ export default function Contact() {
                     <Col md={6}>
                         <h2 className="formTitleMobile">Επικοινωνία</h2>
                         <div className="contactPhotoDiv">
-                            <img src="../public/contact-image.jpg" alt="form photo" className="contactPhoto" />
+                            <img src="./contact-image.jpg" alt="form photo" className="contactPhoto" />
                         </div>
                         <div className="contactInfo">
                             <div className="contactFirm mt-3">Garni Lavash Bakery</div>
