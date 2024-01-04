@@ -14,8 +14,8 @@ export default function Section1() {
                     </Col>
                     <Col lg={6}>
                         <div className="cardboard">
-                            <div className="card1" style={{ border: "5px solid red" }}>
-                                <div className="cardTitle" style={{ color: 'red' }}>LAVASH 1, OAT BRAN & WHOLE WHEAT LAVASH BREAD</div>
+                            <div className="card1" style={{ border: "5px solid #fba0a0" }}>
+                                <div className="cardTitle" style={{ color: '#fba0a0' }}>LAVASH 1, OAT BRAN & WHOLE WHEAT LAVASH BREAD</div>
                                 <div className="cardTxt">Our signature Flax, Oat Bran & Whole Wheat Lavash breads are one of the healthiest bread options around, with the same great taste you’ve grown to love from</div>
                             </div>
                         </div>
@@ -46,8 +46,8 @@ export default function Section1() {
                     </Col>
                     <Col lg={6}>
                         <div className="cardboard">
-                            <div className="card1" style={{ border: "5px solid red" }}>
-                                <div className="cardTitle" style={{ color: 'red' }}>LAVASH 3 WHEAT FLAX, OAT BRAN BREAD</div>
+                            <div className="card1" style={{ border: "5px solid #fba0a0" }}>
+                                <div className="cardTitle" style={{ color: '#fba0a0' }}>LAVASH 3 WHEAT FLAX, OAT BRAN BREAD</div>
                                 <div className="cardTxt">Same great taste you’ve grown Our signature Flax, Oat Bran & Whole Wheat Lavash breads are one of the healthiest bread options around, with the  to love from</div>
                             </div>
                         </div>
