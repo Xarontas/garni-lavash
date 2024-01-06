@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import Footer from "../Footer";
 import TopNavbar from "../TopNavbar";
 
 export default function Contact() {
+    const { t, i18n } = useTranslation();
     return (
         <>
 
@@ -13,40 +15,40 @@ export default function Contact() {
 
                 <Row>
                     <Col md={6}>
-                        <h2 className="formTitleMobile">Επικοινωνία</h2>
+                        <h2 className="formTitleMobile">{t('contact.title')}</h2>
                         <div className="contactPhotoDiv">
                             <img src="./contact-image.jpg" alt="form photo" className="contactPhoto" />
                         </div>
                         <div className="contactInfo">
                             <div className="contactFirm mt-3">Garni Lavash Bakery</div>
                             <div className="contactTel pt-2"><i className="bi bi-telephone-fill"></i> <a href="tel:2310629496">2310.629496</a> / <a href="tel:00306979671345">6979671345</a></div>
-                            <div className="contactAddress pt-2"><i className="bi bi-geo-alt-fill"></i> Παπαδοπούλου 15, Θεσσαλονίκη</div>
+                            <div className="contactAddress pt-2"><i className="bi bi-geo-alt-fill"></i> {t('contact.address')}</div>
                             <div className="contactMail pt-2"><i className="bi bi-envelope-fill"></i> <a href="mailto:giannis_s10@hotmail.com">giannis_s10@hotmail.com</a> </div>
                         </div>
 
                     </Col>
                     <Col md={6}>
                         <form method="post" action="contact2.asp">
-                            <h2 className="formTitle">Επικοινωνία</h2>
+                            <h2 className="formTitle">{t('contact.title')}</h2>
 
                             <div className="form-floating mb-3">
-                                <input type="text" id="name" name="name" className="form-control" placeholder="'Ονομα" required />
-                                <Form.Label htmlFor="name">Όνομα *</Form.Label>
+                                <input type="text" id="name" name="name" className="form-control" placeholder={t('contact.name')} required />
+                                <Form.Label htmlFor="name">{t('contact.name')} *</Form.Label>
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="text" id="mail" name="mail" className="form-control" placeholder="email" />
-                                <Form.Label htmlFor="mail">Email</Form.Label>
+                                <input type="text" id="mail" name="mail" className="form-control" placeholder={t('contact.email')} />
+                                <Form.Label htmlFor="mail">{t('contact.email')}</Form.Label>
                             </div>
                             <div className="form-floating mb-3">
-                                <input type="text" id="phone" name="phone" className="form-control" placeholder="Τηλέφωνο" required />
-                                <Form.Label htmlFor="phone">Τηλέφωνο *</Form.Label>
+                                <input type="text" id="phone" name="phone" className="form-control" placeholder={t('contact.tel')} required />
+                                <Form.Label htmlFor="phone">{t('contact.tel')} *</Form.Label>
                             </div>
                             <div className="form-floating mb-3">
-                                <textarea className="form-control" placeholder="Μήνυμα" id="message" name="message" style={{ height: "150px" }}></textarea>
-                                <Form.Label htmlFor="message">Μήνυμα</Form.Label>
+                                <textarea className="form-control" placeholder={t('contact.message')} id="message" name="message" style={{ height: "150px" }}></textarea>
+                                <Form.Label htmlFor="message">{t('contact.message')}</Form.Label>
                             </div>
                             <Button variant="danger" type="submit">
-                                Αποστολή
+                                {t('contact.submit')}
                             </Button>
                         </form>
 

@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 export default function SectionTitle() {
+    const { t, i18n } = useTranslation();
     return (
         <>
-            <div className="sectionTitle"> Η γκάμα των προϊόντων μας περιλαμβάνει:</div>
+            <div className="sectionTitle"> {t('sectiontitle.txt')}</div>
         </>
     )
 }

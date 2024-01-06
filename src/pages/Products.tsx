@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useState } from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import Modal from 'react-bootstrap/Modal';
@@ -125,6 +126,7 @@ function ProductModal3(props: any) {
 }
 
 export default function Products() {
+    const { t, i18n } = useTranslation();
 
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);
@@ -135,7 +137,7 @@ export default function Products() {
                 <TopNavbar />
             </div>
             <Container className="con-pad">
-                <div className="productsTitle">Τα προϊόντα μας</div>
+                <div className="productsTitle">{t('products.title')}</div>
                 <Row>
                     <Col md={4}>
                         <div className="prodDiv" onClick={() => ProductModal1(setModalShow1(true))}>
@@ -145,7 +147,7 @@ export default function Products() {
                             <div className="prodText">
                                 <div className="prodTitle">Lavash</div>
                                 <div className="text-end me-3">
-                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> Περισσότερα</div>
+                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> {t('products.more')}</div>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +162,7 @@ export default function Products() {
                             <div className="prodText">
                                 <div className="prodTitle">Ποντιακή Πίτα</div>
                                 <div className="text-end me-3">
-                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> Περισσότερα</div>
+                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> {t('products.more')}</div>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +177,7 @@ export default function Products() {
                             <div className="prodText">
                                 <div className="prodTitle">ΛΑΒΑΣ 3</div>
                                 <div className="text-end me-3">
-                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> Περισσότερα</div>
+                                    <div className="prodMore"> <i className="bi bi-arrow-right-circle-fill"></i> {t('products.more')}</div>
                                 </div>
                             </div>
                         </div>

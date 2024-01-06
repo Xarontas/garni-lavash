@@ -303,6 +303,10 @@ p {
   padding: 6% 0;
 }
 
+.aboutSection2Text {
+  font-family: 'Roboto', sans-serif;
+}
+
 .aboutSection2Bg {
   padding-top: 20px;
   border-radius: 10px;

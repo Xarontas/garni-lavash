@@ -1,0 +1,35 @@
+{"menu":
+{
+    "home":"Home",
+    "about":"About Us",
+    "products":"Products",
+    "contact" :"Contact"
+},
+"divtop":
+{
+    "title":"Quality meets Tradition.."
+},
+"sectiontitle":
+{
+    "txt":"Our product range includes:"
+},
+"about":{
+    "title":"About us",
+    "txt":"At Garni Bakery we always operate with our steadfast values, Quality and the same passion and enthusiasm we put into creating our first bread. Our people and the support of our partners are a source of strength to continue our upward trajectory. 'Garni' products can be found in all the large supermarket chains of the Greek market, as well as in smaller stores, kiosks, mini markets throughout the country.",
+    "title2":"Quality control - Quality assurance systems",
+    "txt2":"'Garni Bakery' implements in detail the quality assurance systems IFS, BRC, ISO 22000. The good implementation and observance of the quality systems were certified by the competent German certification body TUV."
+},
+"products":{
+    "title":"Our Products",
+    "more":"More"
+},
+"contact":{
+    "address":"15 Papadopoulou str. Thessaloniki",
+    "title":"Contact",
+    "name":"Name",
+    "email":"email",
+    "tel":"Phone",
+    "message":"Message",
+    "submit":"Submit"
+}
+}

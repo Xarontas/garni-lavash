@@ -1,3 +1,6 @@
+import { useTranslation } from 'react-i18next';
+import { Suspense } from 'react';
+
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -9,7 +12,19 @@ import { Link } from "react-router-dom";
 
 export default function TopNavbar() {
 
-    const [lang, setLang] = useState("Greek");
+    const { t, i18n } = useTranslation();
+    const [lang, setLang] = useState('Ελληνικά');
+
+    const changeLanguage = (lng: string) => {
+        i18n.changeLanguage(lng);
+        if (lng === 'ru') {
+            setLang('Pусский')
+        }
+        else if (lng === 'en') {
+            setLang('English')
+        }
+        else { setLang('Ελληνικά') }
+    }
     return (
         <>
             <Navbar collapseOnSelect expand="lg" className="navbar-dark shadow-5-strong pad">
@@ -19,10 +34,10 @@ export default function TopNavbar() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto"></Nav>
                         <Nav>
-                            <Nav.Link eventKey={1} as={Link} to="/">Home</Nav.Link>
-                            <Nav.Link eventKey={2} as={Link} to="/About">About Us</Nav.Link>
-                            <Nav.Link eventKey={3} as={Link} to="/Products">Products</Nav.Link>
-                            <Nav.Link eventKey={4} as={Link} to="/Contact">Contact</Nav.Link>
+                            <Nav.Link eventKey={1} as={Link} to="/">{t('menu.home')}</Nav.Link>
+                            <Nav.Link eventKey={2} as={Link} to="/About">{t('menu.about')}</Nav.Link>
+                            <Nav.Link eventKey={3} as={Link} to="/Products">{t('menu.products')}</Nav.Link>
+                            <Nav.Link eventKey={4} as={Link} to="/Contact">{t('menu.contact')}</Nav.Link>
 
                             <Dropdown as={ButtonGroup}>
                                 <Button variant="outline-light" className='langButton'><img src="globe.svg" alt="globe" width={'15px'} height={'15px'} /> {lang}</Button>
@@ -30,9 +45,9 @@ export default function TopNavbar() {
                                 <Dropdown.Toggle split variant="outline-light" id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/action-1" onClick={() => setLang("Greek")}>Greek</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-2" onClick={() => setLang("English")}>English</Dropdown.Item>
-                                    <Dropdown.Item href="#/action-3" onClick={() => setLang("Pусский")}>Pусский</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-1" onClick={() => changeLanguage('gr')}>Greek</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-2" onClick={() => changeLanguage('en')}>English</Dropdown.Item>
+                                    <Dropdown.Item href="#/action-3" onClick={() => changeLanguage('ru')}>Pусский</Dropdown.Item>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </Nav>

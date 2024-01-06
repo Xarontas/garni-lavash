@@ -1,8 +1,10 @@
+import { useTranslation } from 'react-i18next';
 import { Container, Row, Col } from "react-bootstrap";
 import Footer from "../Footer";
 import TopNavbar from "../TopNavbar";
 
 export default function About() {
+    const { t, i18n } = useTranslation();
     return (
         <>
             <div className="heroDiv">
@@ -10,10 +12,10 @@ export default function About() {
             </div>
             <div className="aboutDiv">
                 <Container>
-                    <div className='aboutTitle'>Σχετικά με εμάς</div>
+                    <div className='aboutTitle'>{t('about.title')}</div>
                     <Row>
                         <Col sm={12} col={12}>
-                            <div className="aboutText">Στη Garni Bakery λειτουργούμε πάντα με τις σταθερές μας αξίες, την Ποιότητα και το ίδιο πάθος και ενθουσιασμό που βάλαμε στην δημιουργία του πρώτου μας ψωμιού. Οι άνθρωποί μας και η στήριξη των συνεργατών μας είναι πηγή δύναμης για να συνεχίσουμε την ανοδική μας πορεία. Τα προϊόντα «Garni» βρίσκονται σε όλες τις μεγάλες αλυσίδες Σούπερ Μάρκετ της Ελληνικής αγοράς, καθώς και σε μικρότερα καταστήματα, περίπτερα, μίνι μάρκετ σε όλη την χώρα. </div>
+                            <div className="aboutText">{t('about.txt')} </div>
                         </Col>
                     </Row>
                 </Container>
@@ -24,8 +26,8 @@ export default function About() {
                         <Row className="aboutSection2Bg">
                             <Col sm={12} col={12}>
                                 <h2 className="aboutSection2Title">
-                                    Ποιοτικός έλεγχος - Συστήματα διάσφαλισης ποιότητας</h2>
-                                <p className="aboutSection2Text p-4">Η "Garni Bakery" εφαρμόζει λεπτομερώς τα συστήματα διασφάλισης ποιότητας IFS, BRC, ISO 22000. Η καλή εφαρμογή και τήρηση των συστημάτων ποιότητας πιστοποιήθηκαν από τον αρμόδιο γερμανικό φορέα πιστοποίησης TUV.</p>
+                                    {t('about.title2')}</h2>
+                                <p className="aboutSection2Text p-4">{t('about.txt2')}.</p>
                             </Col>
                         </Row>
                     </Container>
