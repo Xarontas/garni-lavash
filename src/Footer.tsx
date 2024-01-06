@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from "react-router-dom";
 
 export default function Footer() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <>
             <div className="footerWrapper bg-black">

@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import TopNavbar from './TopNavbar';
 
 export default function DivTop() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <>
             <div className='divTop'>

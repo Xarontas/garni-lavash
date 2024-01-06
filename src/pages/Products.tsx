@@ -126,7 +126,7 @@ function ProductModal3(props: any) {
 }
 
 export default function Products() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
 
     const [modalShow1, setModalShow1] = useState(false);
     const [modalShow2, setModalShow2] = useState(false);

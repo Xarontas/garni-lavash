@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Suspense } from 'react';
+// import { Suspense } from 'react';
 
 import { useState } from 'react';
 import Container from 'react-bootstrap/Container';

@@ -4,7 +4,7 @@ import Footer from "../Footer";
 import TopNavbar from "../TopNavbar";
 
 export default function About() {
-    const { t, i18n } = useTranslation();
+    const { t } = useTranslation();
     return (
         <>
             <div className="heroDiv">
