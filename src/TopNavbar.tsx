@@ -45,7 +45,7 @@ export default function TopNavbar() {
                                 <Dropdown.Toggle split variant="outline-light" id="dropdown-split-basic" />
 
                                 <Dropdown.Menu>
-                                    <Dropdown.Item href="#/gr" onClick={() => changeLanguage('gr')}>Greek2</Dropdown.Item>
+                                    <Dropdown.Item href="#/gr" onClick={() => changeLanguage('gr')}>Greek</Dropdown.Item>
                                     <Dropdown.Item href="#/en" onClick={() => changeLanguage('en')}>English</Dropdown.Item>
                                     <Dropdown.Item href="#/ru" onClick={() => changeLanguage('ru')}>Pусский</Dropdown.Item>
                                 </Dropdown.Menu>
