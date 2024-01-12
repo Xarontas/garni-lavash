@@ -1,7 +1,9 @@
+import { useTranslation } from 'react-i18next';
 import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
 
 export default function Section1() {
+    const { t } = useTranslation();
     return (
         <>
             <div>
@@ -15,8 +17,8 @@ export default function Section1() {
                     <Col lg={6}>
                         <div className="cardboard">
                             <div className="card1" style={{ border: "5px solid #fba0a0" }}>
-                                <div className="cardTitle" style={{ color: '#fba0a0' }}>LAVASH 1, OAT BRAN & WHOLE WHEAT LAVASH BREAD</div>
-                                <div className="cardTxt">Our signature Flax, Oat Bran & Whole Wheat Lavash breads are one of the healthiest bread options around, with the same great taste you’ve grown to love from</div>
+                                <div className="cardTitle" style={{ color: '#fba0a0' }}>{t('section1.title1')}</div>
+                                <div className="cardTxt">{t('section1.txt1')}</div>
                             </div>
                         </div>
                     </Col>
@@ -26,8 +28,8 @@ export default function Section1() {
                     <Col lg={6} className="ord">
                         <div className="cardboard">
                             <div className="card1" style={{ border: "5px solid green" }}>
-                                <div className="cardTitle" style={{ color: 'green' }}>ΠΟΝΤΙΑΚΗ ΠΙΤΑ</div>
-                                <div className="cardTxt">Oat Bran & Whole Wheat Lavash breads, Oat Bran & Whole Wheat Lavash breads are one of the healthiest bread options around, with the same great taste you’ve grown to love from</div>
+                                <div className="cardTitle" style={{ color: 'green' }}>{t('section1.title2')}</div>
+                                <div className="cardTxt">{t('section1.txt2')}</div>
                             </div>
                         </div>
                     </Col>
@@ -47,8 +49,8 @@ export default function Section1() {
                     <Col lg={6}>
                         <div className="cardboard">
                             <div className="card1" style={{ border: "5px solid #fba0a0" }}>
-                                <div className="cardTitle" style={{ color: '#fba0a0' }}>LAVASH 3 WHEAT FLAX, OAT BRAN BREAD</div>
-                                <div className="cardTxt">Same great taste you’ve grown Our signature Flax, Oat Bran & Whole Wheat Lavash breads are one of the healthiest bread options around, with the  to love from</div>
+                                <div className="cardTitle" style={{ color: '#fba0a0' }}>{t('section1.title3')}</div>
+                                <div className="cardTxt">{t('section1.txt3')}</div>
                             </div>
                         </div>
                     </Col>
